@@ -9,14 +9,10 @@ var reduce = function (nums, fn, init) {
   if (init === undefined) init = nums[0]
   if (nums.length === 0) return init
 
-  let result
+  let result = init
 
   for (let i = 0; i < nums.length; i++) {
-    if (i === 0) {
-      result = fn(init, nums[0])
-    } else {
-      result = fn(result, nums[i])
-    }
+    result = fn(result, nums[i])
   }
   return result
 }
