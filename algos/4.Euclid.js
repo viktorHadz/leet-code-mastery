@@ -16,4 +16,5 @@ console.log(euclid(10, 5))
 2. second condition - returns the same function 
 3. The function must in some way move towards the final condition each itteration. 
 
+
 */
