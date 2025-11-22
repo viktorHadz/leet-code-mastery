@@ -32,7 +32,7 @@ function countFrequency(nums, k) {
         myMap.set(num, (myMap.get(num) || 0) + 1) // Notice the pattern here
     }
     console.log('mapreversed', myMap)
-    // 2. Swap | O(n) as it maps over each el 
+    // 2. Swap key value| O(n) as it maps over each el 
     const mapArr = [...myMap].map(([val, freq]) => {
         return [freq, val]
     })
